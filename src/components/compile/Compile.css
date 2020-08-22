@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+h3 {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+}
+.Photo {
+  align-items: center;
+}
+button {
+  width: 100px;
+  color: blue;
+}
