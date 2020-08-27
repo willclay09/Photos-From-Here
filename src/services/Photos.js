@@ -11,9 +11,13 @@ function flickrService(state) {
 
   const URL = `${proxyServer + domain + path}?${queryString}`;
 
-  return fetch(URL).then((response) => {
-    return response.json();
-  });
+  return fetch(URL)
+    .then((response) => {
+      return response.json();
+    })
+    .catch((err) => {
+      console.warn(err.message);
+    });
 }
 
 export default flickrService;
